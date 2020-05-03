@@ -25,8 +25,8 @@ class WhatsAppShare {
 }
 
 class WhatsAppShareAdapter implements Share {
-    private $whatsApp;
-    private $data;
+    private WhatsAppShare $whatsApp;
+    private String $data;
     public function __construct(WhatsAppShare $whatsApp, String $message)
     {
         $this->whatsApp= $whatsApp;
