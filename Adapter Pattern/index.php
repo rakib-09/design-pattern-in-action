@@ -4,7 +4,7 @@
  * Date: 2/5/20
  * Time: 12:38 am
  */
-
+//this pattern usually use for API  call.
 interface Share {
     public function shareData();
 }

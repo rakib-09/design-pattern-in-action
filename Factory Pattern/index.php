@@ -76,3 +76,9 @@ class BusinessFundraising extends Fundraising {
         return new Business();
     }
 }
+
+function makeFundraising(Fundraising $fundraising) {
+    $fundraising->campaignType();
+}
+makeFundraising(new BusinessFundraising());
+makeFundraising(new CharityFundraising());
