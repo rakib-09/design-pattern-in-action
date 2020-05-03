@@ -9,6 +9,10 @@ interface Share {
     public function shareData();
 }
 
+//now if we change whatsApp share method. it will not impact on our client side.
+// all the uses of adapter will remain same.
+//here is the example:
+
 class WhatsAppShare {
 //    public function waShare(String $string)
 //    {
@@ -44,6 +48,4 @@ function clientCode (Share $share){
 
 $adapter = new WhatsAppShareAdapter(new WhatsAppShare(), 'Hello from WhatsApp');
 clientCode($adapter);
-//now if we change whatsApp share method. it will not impact on our client side.
-// all the uses of adapter will remain same.
-//here is the example:
+
